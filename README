@@ -1,0 +1,6 @@
+Usage: sheets.rb -t 2 -b 1 -o 'x'
+    -t, --top x                      Number (x) of digits in top number
+    -b, --bottom x                   Number (x) of digits in bottom number
+    -o, --operator "x"               The character representation of the operator
+    -a, --answers                    Provide if you want an additional sheet containing the answers
+    -h, --help                       Display this screen
