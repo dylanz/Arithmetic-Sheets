@@ -1,6 +1,4 @@
 # hacky little thing that spits out random arithmetic sheets given some basic input.
-# handy for kids, teachers, and mathemagicians!
-
 require 'pdf/writer'
 require 'optparse'
 
@@ -66,11 +64,14 @@ def space_bottom(top, bottom, operator)
   " " * if operator == "-"
     top - bottom + 1
   elsif operator == "%"
-    top - bottom - 1
+    if top - bottom > 0
+      top - bottom - 1
+    else
+      0
+    end
   else
     top - bottom
   end
-  #" " * ((operator == "-") ? (top - bottom + 1) : (top - bottom))
 end
 
 def space_top(top, bottom)

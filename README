@@ -1,3 +1,5 @@
+gem install pdf-writer
+
 Usage: sheets.rb -t 2 -b 1 -o 'x'
     -t, --top x                      Number (x) of digits in top number
     -b, --bottom x                   Number (x) of digits in bottom number
